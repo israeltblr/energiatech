@@ -1,0 +1,425 @@
+/* ======================
+   PÁGINA DE PLANOS 
+   ====================== */
+   .planos-section {
+    padding: 100px 0;
+    background-color: #f9fafc;
+}
+
+.selo-garantia {
+    background-color: var(--verde-energetico);
+    color: white;
+    padding: 10px 25px;
+    border-radius: 30px;
+    display: inline-flex;
+    align-items: center;
+    margin: 0 auto 30px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.selo-garantia i {
+    margin-right: 10px;
+}
+
+.planos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.plano-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: var(--sombra);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.plano-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--sombra-hover);
+}
+
+.plano-card.popular {
+    border: 2px solid var(--verde-energetico);
+}
+
+.plano-badge {
+    position: absolute;
+    top: 15px;
+    right: -30px;
+    background-color: var(--verde-energetico);
+    color: white;
+    padding: 5px 30px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    transform: rotate(45deg);
+}
+
+.plano-header {
+    padding: 30px;
+    background-color: var(--azul-tecnico);
+    color: white;
+    text-align: center;
+}
+
+.plano-header h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.plano-preco {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.plano-preco .valor {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.plano-preco .periodo {
+    font-size: 1rem;
+    margin-left: 5px;
+    opacity: 0.8;
+}
+
+.plano-beneficios {
+    padding: 30px;
+}
+
+.plano-beneficios ul {
+    list-style: none;
+}
+
+.plano-beneficios ul li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.plano-beneficios ul li i {
+    margin-right: 10px;
+    color: var(--verde-energetico);
+}
+
+.plano-cta {
+    padding: 0 30px 30px;
+    text-align: center;
+}
+
+.btn-plano {
+    display: block;
+    background-color: var(--verde-energetico);
+    color: white;
+    padding: 12px;
+    border-radius: 4px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-plano:hover {
+    background-color: #00b386;
+}
+
+.planos-comparativo {
+    margin-top: 50px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: var(--sombra);
+}
+
+.planos-comparativo h3 {
+    margin-bottom: 20px;
+    color: var(--azul-tecnico);
+}
+
+.planos-comparativo table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.planos-comparativo th, 
+.planos-comparativo td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #e1e5ee;
+}
+
+.planos-comparativo th {
+    background-color: #f5f7fa;
+    font-weight: 600;
+}
+
+.planos-comparativo tr:hover {
+    background-color: #f9f9f9;
+}
+
+.oferta-especial {
+    margin-top: 50px;
+    background: linear-gradient(135deg, var(--azul-tecnico) 0%, var(--azul-escuro) 100%);
+    color: white;
+    padding: 40px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.oferta-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.contador {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.contador-item {
+    text-align: center;
+}
+
+.contador-item span:first-child {
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.contador-item span:last-child {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.oferta-cta {
+    text-align: center;
+}
+
+/* ======================
+   PÁGINA DE SERVIÇOS 
+   ====================== */
+.servicos-section {
+    padding: 100px 0;
+    background-color: #f9fafc;
+}
+
+.servicos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.servico-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: var(--sombra);
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.servico-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--sombra-hover);
+}
+
+.servico-icon {
+    font-size: 2.5rem;
+    color: var(--verde-energetico);
+    margin-bottom: 20px;
+}
+
+.servico-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: var(--azul-tecnico);
+}
+
+.servico-card p {
+    color: var(--cinza-escuro);
+    margin-bottom: 20px;
+}
+
+.servico-preco {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--verde-energetico);
+    margin-bottom: 20px;
+}
+
+.btn-servico {
+    display: inline-block;
+    background-color: var(--azul-tecnico);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-servico:hover {
+    background-color: var(--azul-escuro);
+}
+
+.btn-servico.emergency {
+    background-color: #e74c3c;
+}
+
+.btn-servico.emergency:hover {
+    background-color: #c0392b;
+}
+
+.orcamento-section {
+    background-color: white;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: var(--sombra);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.orcamento-form {
+    flex: 1;
+    min-width: 300px;
+}
+
+.orcamento-form h3 {
+    margin-bottom: 20px;
+    color: var(--azul-tecnico);
+}
+
+.orcamento-info {
+    flex: 1;
+    min-width: 300px;
+}
+
+.orcamento-info h3 {
+    margin-bottom: 20px;
+    color: var(--azul-tecnico);
+}
+
+.orcamento-info ul {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.orcamento-info ul li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.orcamento-info ul li i {
+    color: var(--verde-energetico);
+    margin-right: 10px;
+    margin-top: 3px;
+}
+
+.whatsapp-box {
+    background-color: #f5f7fa;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.whatsapp-box p {
+    margin-bottom: 15px;
+}
+
+/* ======================
+   PÁGINA FAQ 
+   ====================== */
+.faq-section {
+    padding: 100px 0;
+    background-color: #f9fafc;
+}
+
+.faq-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.faq-questions {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: var(--sombra);
+}
+
+.faq-chatbot {
+    background-color: white;
+    padding: 0;
+    border-radius: 10px;
+    box-shadow: var(--sombra);
+    height: 100%;
+}
+
+/* Responsividade para todas as páginas */
+@media (max-width: 992px) {
+    .planos-grid, 
+    .servicos-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    
+    .faq-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .oferta-especial {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+    
+    .contador {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .planos-section,
+    .servicos-section,
+    .faq-section {
+        padding: 60px 0;
+    }
+    
+    .plano-card {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    .orcamento-section {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .plano-header {
+        padding: 20px;
+    }
+    
+    .plano-beneficios {
+        padding: 20px;
+    }
+    
+    .servico-card {
+        padding: 20px;
+    }
+    
+    .orcamento-section {
+        padding: 20px;
+    }
+}

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EnergiaTech | Área de Atuação - Cobertura em Paulo Afonso e Região</title>
+    <meta name="description"
+        content="Atendemos em Paulo Afonso e cidades vizinhas com manutenção preventiva e corretiva para geradores de energia. Confira nossa área de cobertura.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/atuacao.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+</head>
+
+<body>
+    <!-- Mesmo header do index.html -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo-energiatech.png" alt="EnergiaTech Geradores" width="180"></a>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="planos.html">Planos</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="area-atuacao.html">Área de Atuação</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="https://wa.me/5571999999999" class="btn-whatsapp"><i class="fab fa-whatsapp"></i>
+                            Atendimento</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="atuacao-hero">
+        <div class="container">
+            <h1>Área de Atuação</h1>
+            <p>Atendemos em Paulo Afonso e toda a região com serviços especializados para geradores</p>
+        </div>
+    </section>
+
+    <section class="atuacao-section">
+        <div class="container">
+            <div class="atuacao-content">
+                <div class="atuacao-map" id="atuacaoMap"></div>
+                <div class="atuacao-info">
+                    <h2>Cobertura Completa</h2>
+                    <p>Nossa equipe técnica está preparada para atender em toda a região com rapidez e eficiência.</p>
+
+                    <div class="atuacao-cidades">
+                        <h3>Cidades atendidas:</h3>
+                        <div class="cidades-grid">
+                            <div class="cidades-col">
+                                <ul>
+                                    <li><i class="fas fa-map-marker-alt"></i> Paulo Afonso - BA</li>
+                                    <li><i class="fas fa-map-marker-alt"></i> Glória - BA</li>
+                                    <li><i class="fas fa-map-marker-alt"></i> Santa Brígida - BA</li>
+                                    <li><i class="fas fa-map-marker-alt"></i> Delmiro Goveia - AL</li>
+                                </ul>
+                            </div>
+                            <div class="cidades-col">
+                                <ul>
+                                    <li><i class="fas fa-map-marker-alt"></i> Petrolândia - PE</li>
+                                    <li><i class="fas fa-map-marker-alt"></i> Jatobá - PE</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="atuacao-tempo">
+                        <h3>Tempo de resposta:</h3>
+                        <div class="tempo-grid">
+                            <div class="tempo-item">
+                                <div class="tempo-icon"><i class="fas fa-city"></i></div>
+                                <div class="tempo-text">
+                                    <h4>Zona Urbana</h4>
+                                    <p>Até 2 horas para emergências</p>
+                                </div>
+                            </div>
+                            <div class="tempo-item">
+                                <div class="tempo-icon"><i class="fas fa-road"></i></div>
+                                <div class="tempo-text">
+                                    <h4>Região Metropolitana</h4>
+                                    <p>Até 4 horas para emergências</p>
+                                </div>
+                            </div>
+                            <div class="tempo-item">
+                                <div class="tempo-icon"><i class="fas fa-tree"></i></div>
+                                <div class="tempo-text">
+                                    <h4>Demais Municípios</h4>
+                                    <p>Até 8 horas para emergências</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="atuacao-depoimentos">
+                <h2>Clientes em Nossa Área</h2>
+                <div class="depoimentos-grid">
+                    <div class="depoimento-card">
+                        <div class="depoimento-text">
+                            <p>"Quando nosso gerador falhou no meio da noite, a EnergiaTech chegou em menos de 90
+                                minutos e resolveu o problema. Serviço essencial para nossa clínica!"</p>
+                        </div>
+                        <div class="depoimento-cliente">
+                            <img src="images/cliente-clinica.jpg" alt="Dr. Marcos Andrade">
+                            <div>
+                                <h4>Dr. Marcos Andrade</h4>
+                                <span>Clínica Médica Vida, Paulo Afonso</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="depoimento-card">
+                        <div class="depoimento-text">
+                            <p>"Mesmo estando em Glória, recebemos o mesmo atendimento rápido e profissional que
+                                clientes em Paulo Afonso. Recomendo!"</p>
+                        </div>
+                        <div class="depoimento-cliente">
+                            <img src="images/cliente-hotel.jpg" alt="Sra. Luciana Mendes">
+                            <div>
+                                <h4>Sra. Luciana Mendes</h4>
+                                <span>Hotel São Francisco, Glória</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="atuacao-cta">
+                <h3>Precisa de atendimento em sua cidade?</h3>
+                <p>Confira se atendemos em seu município ou solicite uma visita técnica.</p>
+                <div class="cta-buttons">
+                    <a href="https://wa.me/5571999999999" class="btn-whatsapp">
+                        <i class="fab fa-whatsapp"></i> Verificar Cobertura
+                    </a>
+                    <a href="planos.html" class="btn-secondary">
+                        <i class="fas fa-calendar-check"></i> Agendar Visita
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mesmo footer do index.html -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-col">
+                <img src="images/logo-energiatech-white.png" alt="EnergiaTech" width="160">
+                <p>Tecnologia e expertise para garantir energia contínua para seu negócio.</p>
+                <div class="social-links">
+                    <a href="https://wa.me/5575988975914"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/energiatech_geradores/"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Links Rápidos</h3>
+                <ul>
+                    <li><a href="planos.html">Planos Mensais</a></li>
+                    <li><a href="servicos.html">Serviços Avulsos</a></li>
+                    <li><a href="area-atuacao.html">Cobertura</a></li>
+                    <li><a href="faq.html">Perguntas Frequentes</a></li>
+                    <li><a href="#">Blog Técnico</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contato</h3>
+                <ul>
+                    <li><i class="fas fa-phone-alt"></i> (75) 99977-3760</li>
+                    <li><i class="fas fa-envelope"></i> energiatechg@gmail.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i>
+                        <h3>Atendimento Móvel</h3>
+                        <p>Nossa sede é onde nossos clientes estão<br>
+                        Técnico móvel para toda a região<br>
+                        Paulo Afonso - BA</p></li>
+                </ul>
+                <a href="https://wa.me/5571999999999" class="btn-whatsapp-footer">
+                    <i class="fab fa-whatsapp"></i> Fale pelo WhatsApp
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2023 EnergiaTech Geradores. Todos os direitos reservados.</p>
+                <div class="footer-links">
+                    <a href="#">Termos de Serviço</a>
+                    <a href="#">Política de Privacidade</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/5571999999999" class="float-whatsapp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/atuacao.js"></script>
+</body>
+
+</html>

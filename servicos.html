@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<!-- Mesmo head do index.html -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EnergiaTech | Manutenção Preventiva de Geradores com IA</title>
+    <meta name="description"
+        content="Manutenção preventiva de geradores com inteligência artificial. Evite falhas e economize até 30% com nossos planos mensais.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/servicos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- Mesmo header do index.html -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo-energiatech.png" alt="EnergiaTech Geradores" width="180"></a>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="planos.html">Planos</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="area-atuacao.html">Área de Atuação</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="https://wa.me/5575988975914" class="btn-whatsapp"><i class="fab fa-whatsapp"></i>
+                            Atendimento</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="servicos-section">
+        <div class="container">
+            <h1 class="section-title">Serviços Avulsos</h1>
+            <p class="section-subtitle">Soluções pontuais para suas necessidades específicas</p>
+
+            <div class="servicos-grid">
+                <div class="servico-card">
+                    <div class="servico-icon"><i class="fas fa-microchip"></i></div>
+                    <h3>Diagnóstico com IA</h3>
+                    <p>Análise completa do seu gerador utilizando nossa plataforma de inteligência artificial.</p>
+                    <div class="servico-preco">A partir de R$ 299</div>
+                    <a href="#form-orcamento" class="btn-servico">Solicitar Orçamento</a>
+                </div>
+
+                <!-- <div class="servico-card">
+                    <div class="servico-icon"><i class="fas fa-bolt"></i></div>
+                    <h3>Teste de Carga</h3>
+                    <p>Verificação da capacidade real de geração em condições de operação.</p>
+                    <div class="servico-preco">A partir de R$ 499</div>
+                    <a href="#form-orcamento" class="btn-servico">Solicitar Orçamento</a>
+                </div> -->
+
+                <div class="servico-card">
+                    <div class="servico-icon"><i class="fas fa-bolt"></i></div>
+                    <h3>Manutenção de placa fotovotaica</h3>
+                    <p>Manutenção de placas fotovotaicas para melhores resultados.</p>
+                    <div class="servico-preco">A partir de R$ 299</div>
+                    <a href="#form-orcamento" class="btn-servico">Solicitar Orçamento</a>
+                </div>
+
+                <div class="servico-card">
+                    <div class="servico-icon"><i class="fas fa-cogs"></i></div>
+                    <h3>Rebobinagem</h3>
+                    <p>Reparo especializado em motores elétricos e alternadores de geradores.</p>
+                    <div class="servico-preco">Sob consulta</div>
+                    <a href="#form-orcamento" class="btn-servico">Solicitar Orçamento</a>
+                </div>
+
+                <div class="servico-card">
+                    <div class="servico-icon"><i class="fas fa-tools"></i></div>
+                    <h3>Manutenção Preventiva</h3>
+                    <p>Serviço completo para evitar falhas e prolongar a vida útil do equipamento.</p>
+                    <div class="servico-preco">A partir de R$ 1.199</div>
+                    <a href="#form-orcamento" class="btn-servico">Solicitar Orçamento</a>
+                </div>
+
+                <div class="servico-card">
+                    <div class="servico-icon"><i class="fas fa-battery-full"></i></div>
+                    <h3>Troca de Baterias</h3>
+                    <p>Substituição do sistema de partida com produtos de alta qualidade.</p>
+                    <div class="servico-preco">A partir de R$ 439</div>
+                    <a href="#form-orcamento" class="btn-servico">Solicitar Orçamento</a>
+                </div>
+
+                <div class="servico-card">
+                    <div class="servico-icon"><i class="fas fa-exclamation-triangle"></i></div>
+                    <h3>Manutenção Corretiva</h3>
+                    <p>Reparo emergencial para quando o gerador apresenta falhas ou não liga.</p>
+                    <div class="servico-preco">Sob consulta</div>
+                    <a href="https://wa.me/5575999773760" class="btn-servico emergency">
+                        <i class="fas fa-phone-alt"></i> Emergência 24h
+                    </a>
+                </div>
+            </div>
+
+            <div class="orcamento-section" id="form-orcamento">
+                <div class="orcamento-form">
+                    <h3>Solicite um Orçamento</h3>
+                    <form id="orcamentoForm">
+                        <div class="form-group">
+                            <input type="text" id="nome-orcamento" placeholder="Seu nome" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="telefone-orcamento" placeholder="Seu telefone" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email-orcamento" placeholder="Seu e-mail" required>
+                        </div>
+                        <div class="form-group">
+                            <select id="servico-orcamento" required>
+                                <option value="">Selecione o serviço</option>
+                                <option value="diagnostico">Diagnóstico com IA</option>
+                                <option value="teste-carga">Teste de Carga</option>
+                                <option value="rebobinagem">Rebobinagem</option>
+                                <option value="preventiva">Manutenção Preventiva</option>
+                                <option value="baterias">Troca de Baterias</option>
+                                <option value="outro">Outro Serviço</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="mensagem-orcamento"
+                                placeholder="Descreva seu gerador (marca, modelo, problema)"></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">
+                            <i class="fas fa-paper-plane"></i> Enviar Solicitação
+                        </button>
+                    </form>
+                </div>
+                <div class="orcamento-info">
+                    <h3>Por que escolher nossos serviços?</h3>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Técnicos especializados e certificados</li>
+                        <li><i class="fas fa-check-circle"></i> Peças originais e de qualidade</li>
+                        <li><i class="fas fa-check-circle"></i> Garantia em todos os serviços</li>
+                        <li><i class="fas fa-check-circle"></i> Atendimento rápido e eficiente</li>
+                        <li><i class="fas fa-check-circle"></i> Transparência no orçamento</li>
+                    </ul>
+                    <div class="whatsapp-box">
+                        <p>Prefere falar direto com um técnico?</p>
+                        <a href="https://wa.me/5575988975914" class="btn-whatsapp">
+                            <i class="fab fa-whatsapp"></i> Chamar no WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mesmo footer do index.html -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-col">
+                <img src="images/logo-energiatech-white.png" alt="EnergiaTech" width="160">
+                <p>Tecnologia e expertise para garantir energia contínua para seu negócio.</p>
+                <div class="social-links">
+                    <a href="https://wa.me/5575988975914"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/energiatech_geradores/"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Links Rápidos</h3>
+                <ul>
+                    <li><a href="planos.html">Planos Mensais</a></li>
+                    <li><a href="servicos.html">Serviços Avulsos</a></li>
+                    <li><a href="area-atuacao.html">Cobertura</a></li>
+                    <li><a href="faq.html">Perguntas Frequentes</a></li>
+                    <li><a href="#">Blog Técnico</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contato</h3>
+                <ul>
+                    <li><i class="fas fa-phone-alt"></i> (75) 99977-3760</li>
+                    <li><i class="fas fa-envelope"></i> energiatechg@gmail.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i>
+                        <h3>Atendimento Móvel</h3>
+                        <p>Nossa sede é onde nossos clientes estão<br>
+                        Técnico móvel para toda a região<br>
+                        Paulo Afonso - BA</p></li>
+                </ul>
+                <a href="https://wa.me/5575988975914" class="btn-whatsapp-footer">
+                    <i class="fab fa-whatsapp"></i> Fale pelo WhatsApp
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2021 EnergiaTech Geradores. Todos os direitos reservados.</p>
+                <div class="footer-links">
+                    <a href="#">Termos de Serviço</a>
+                    <a href="#">Política de Privacidade</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/5575988975914" class="float-whatsapp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="js/main.js"></script>
+    <script src="js/form-validation.js"></script>
+</body>
+
+</html>

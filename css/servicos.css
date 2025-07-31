@@ -1,0 +1,312 @@
+/* servicos.css - Estilos específicos para a página Serviços */
+
+.servicos-section {
+    padding: 100px 0;
+    background-color: #f9fafc;
+    position: relative;
+}
+
+.servicos-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+.servicos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.servico-card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 40px 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.4s ease;
+    border: 1px solid #e1e5ee;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.servico-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    border-color: var(--verde-energetico);
+}
+
+.servico-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: var(--verde-energetico);
+}
+
+.servico-icon {
+    font-size: 3rem;
+    color: var(--verde-energetico);
+    margin-bottom: 25px;
+    transition: all 0.3s ease;
+}
+
+.servico-card:hover .servico-icon {
+    transform: scale(1.1);
+}
+
+.servico-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    color: var(--azul-tecnico);
+}
+
+.servico-card p {
+    color: var(--cinza-escuro);
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.servico-preco {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--verde-energetico);
+    margin-bottom: 25px;
+}
+
+.btn-servico {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--azul-tecnico);
+    color: white;
+    padding: 12px 25px;
+    border-radius: 6px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+.btn-servico i {
+    margin-right: 8px;
+}
+
+.btn-servico:hover {
+    background-color: var(--azul-escuro);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 91, 170, 0.3);
+}
+
+.btn-servico.emergency {
+    background-color: #e74c3c;
+}
+
+.btn-servico.emergency:hover {
+    background-color: #c0392b;
+}
+
+/* Seção de orçamento */
+.orcamento-section {
+    background-color: white;
+    padding: 60px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e1e5ee;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.orcamento-form {
+    flex: 1;
+    min-width: 300px;
+}
+
+.orcamento-form h3 {
+    font-size: 1.8rem;
+    color: var(--azul-tecnico);
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--azul-escuro);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #e1e5ee;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: var(--verde-energetico);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 200, 151, 0.2);
+}
+
+.form-group textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.btn-orcamento {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--verde-energetico);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 6px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1.1rem;
+}
+
+.btn-orcamento i {
+    margin-right: 10px;
+}
+
+.btn-orcamento:hover {
+    background-color: #00b386;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 200, 151, 0.3);
+}
+
+.orcamento-info {
+    flex: 1;
+    min-width: 300px;
+}
+
+.orcamento-info h3 {
+    font-size: 1.8rem;
+    color: var(--azul-tecnico);
+    margin-bottom: 25px;
+}
+
+.orcamento-info ul {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.orcamento-info ul li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: flex-start;
+    line-height: 1.6;
+}
+
+.orcamento-info ul li i {
+    color: var(--verde-energetico);
+    margin-right: 12px;
+    margin-top: 3px;
+    flex-shrink: 0;
+}
+
+.whatsapp-box {
+    background-color: #f5f7fa;
+    padding: 25px;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 30px;
+    border: 1px dashed var(--verde-energetico);
+}
+
+.whatsapp-box p {
+    margin-bottom: 20px;
+    color: var(--cinza-escuro);
+}
+
+/* Responsividade */
+@media (max-width: 1200px) {
+    .servicos-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 992px) {
+    .servicos-section {
+        padding: 80px 0;
+    }
+    
+    .orcamento-section {
+        padding: 50px;
+        gap: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .servicos-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+    
+    .servico-card {
+        padding: 30px 25px;
+    }
+    
+    .orcamento-section {
+        padding: 40px 30px;
+    }
+    
+    .orcamento-form h3,
+    .orcamento-info h3 {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .servicos-section {
+        padding: 60px 0;
+    }
+    
+    .servico-card {
+        max-width: 350px;
+        margin: 0 auto;
+    }
+    
+    .orcamento-section {
+        padding: 30px 20px;
+        gap: 30px;
+    }
+    
+    .btn-servico {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    .servico-icon {
+        font-size: 2.5rem;
+    }
+    
+    .servico-card h3 {
+        font-size: 1.3rem;
+    }
+    
+    .orcamento-form h3,
+    .orcamento-info h3 {
+        font-size: 1.4rem;
+    }
+}

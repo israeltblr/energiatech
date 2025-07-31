@@ -1,0 +1,721 @@
+/* planos.css - Estilos específicos para a página de Planos */
+
+/* ======================
+   SEÇÃO DE PLANOS 
+   ====================== */
+   .planos-section {
+    padding: 100px 0;
+    background-color: #f9fafc;
+    position: relative;
+}
+
+.planos-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--azul-tecnico);
+    margin-bottom: 15px;
+}
+
+.section-subtitle {
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--cinza-escuro);
+    margin-bottom: 50px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.selo-garantia {
+    background-color: var(--verde-energetico);
+    color: white;
+    padding: 12px 25px;
+    border-radius: 30px;
+    display: inline-flex;
+    align-items: center;
+    margin: 0 auto 40px;
+    font-weight: 600;
+    font-size: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 200, 151, 0.3);
+    transition: all 0.3s ease;
+}
+
+.selo-garantia:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0, 200, 151, 0.4);
+}
+
+.selo-garantia i {
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+/* ======================
+   GRADE DE PLANOS 
+   ====================== */
+.planos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.plano-card {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: all 0.4s ease;
+    position: relative;
+    border: 1px solid #e1e5ee;
+}
+
+.plano-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+    border-color: var(--verde-energetico);
+}
+
+.plano-card.popular {
+    border: 2px solid var(--verde-energetico);
+    box-shadow: 0 5px 20px rgba(0, 200, 151, 0.2);
+}
+
+.plano-card.popular:hover {
+    box-shadow: 0 15px 35px rgba(0, 200, 151, 0.25);
+}
+
+.plano-badge {
+    position: absolute;
+    top: 20px;
+    right: -35px;
+    background-color: var(--verde-energetico);
+    color: white;
+    padding: 6px 35px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    transform: rotate(45deg);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.plano-header {
+    padding: 30px;
+    background: linear-gradient(135deg, var(--azul-tecnico) 0%, var(--azul-escuro) 100%);
+    color: white;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.plano-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, transparent 100%);
+}
+
+.plano-header h3 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.plano-preco {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+}
+
+.plano-preco .valor {
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.plano-preco .periodo {
+    font-size: 1.1rem;
+    margin-left: 5px;
+    opacity: 0.8;
+    margin-bottom: 5px;
+}
+
+.plano-beneficios {
+    padding: 30px;
+}
+
+.plano-beneficios ul {
+    list-style: none;
+}
+
+.plano-beneficios ul li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: flex-start;
+    line-height: 1.5;
+    color: var(--cinza-escuro);
+}
+
+.plano-beneficios ul li i {
+    margin-right: 12px;
+    color: var(--verde-energetico);
+    margin-top: 3px;
+    flex-shrink: 0;
+}
+
+.plano-beneficios ul li strong {
+    color: var(--azul-escuro);
+}
+
+.plano-cta {
+    padding: 0 30px 30px;
+    text-align: center;
+}
+
+.btn-plano {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--verde-energetico);
+    color: white;
+    width: 100%;
+    padding: 15px;
+    border-radius: 6px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    font-size: 1.05rem;
+}
+
+.btn-plano i {
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+.btn-plano:hover {
+    background-color: #00b386;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 200, 151, 0.3);
+}
+
+/* ======================
+   TABELA COMPARATIVA - DESIGN MODERNO
+   ====================== */
+   .planos-comparativo {
+    --border-color: #e1e5ee;
+    --hover-color: #f1f5fe;
+    --even-row: #f9fafc;
+    --text-color: #2d3748;
+    --header-bg: var(--azul-tecnico);
+    --check-color: var(--verde-energetico);
+    --cross-color: #e74c3c;
+    --transition-speed: 0.3s;
+    
+    margin: 3.75rem 0;
+    background-color: white;
+    padding: clamp(1.5rem, 3vw, 2.5rem);
+    border-radius: 12px;
+    box-shadow: 
+        0 5px 15px rgba(0, 0, 0, 0.05),
+        0 0 0 1px rgba(0, 0, 0, 0.02);
+    border: 1px solid var(--border-color);
+    overflow: hidden;
+}
+
+.planos-comparativo h3 {
+    text-align: center;
+    font-size: clamp(1.5rem, 3vw, 1.8rem);
+    color: var(--azul-tecnico);
+    margin-bottom: 1.875rem;
+    position: relative;
+    padding-bottom: 0.75rem;
+}
+
+.planos-comparativo h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--azul-tecnico), var(--verde-energetico));
+    border-radius: 3px;
+}
+
+/* Container responsivo para tabela */
+.table-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    border-radius: 8px;
+    margin: 0 -0.5rem;
+    padding: 0 0.5rem;
+}
+
+/* Estilos da tabela */
+.tabela-planos {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    min-width: 600px;
+    background: white;
+    position: relative;
+}
+
+.tabela-planos th {
+    background-color: var(--header-bg);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-weight: 600;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.tabela-planos th:first-child {
+    border-top-left-radius: 8px;
+    text-align: left;
+    padding-left: 1.5rem;
+}
+
+.tabela-planos th:last-child {
+    border-top-right-radius: 8px;
+}
+
+.tabela-planos td {
+    padding: 1rem;
+    border-bottom: 1px solid var(--border-color);
+    text-align: center;
+    transition: background-color var(--transition-speed) ease;
+    color: var(--text-color);
+}
+
+.tabela-planos td:first-child {
+    text-align: left;
+    padding-left: 1.5rem;
+    font-weight: 500;
+}
+
+.tabela-planos tr:nth-child(even) {
+    background-color: var(--even-row);
+}
+
+.tabela-planos tr:hover td {
+    background-color: var(--hover-color);
+}
+
+/* Estilos para o rodapé */
+.tabela-planos tfoot td {
+    background-color: #f5f7fa;
+    font-size: 0.8rem;
+    color: #718096;
+    text-align: center;
+    padding: 0.75rem;
+}
+
+/* Ícones aprimorados */
+.icone-check {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-color: var(--check-color);
+    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E") no-repeat center;
+    -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E") no-repeat center;
+    transition: transform 0.2s ease;
+}
+
+.icone-times {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-color: var(--cross-color);
+    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='18' y1='6' x2='6' y2='18'%3E%3C/line%3E%3Cline x1='6' y1='6' x2='18' y2='18'%3E%3C/line%3E%3C/svg%3E") no-repeat center;
+    -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='18' y1='6' x2='6' y2='18'%3E%3C/line%3E%3Cline x1='6' y1='6' x2='18' y2='18'%3E%3C/line%3E%3C/svg%3E") no-repeat center;
+}
+
+/* Efeitos de hover */
+.tabela-planos tr:hover .icone-check {
+    transform: scale(1.2);
+}
+
+/* Destaque para coluna Premium */
+.tabela-planos th:nth-child(4),
+.tabela-planos td:nth-child(4) {
+    background-color: rgba(0, 123, 255, 0.05);
+    position: relative;
+}
+
+.tabela-planos td:nth-child(4)::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(to bottom, var(--azul-tecnico), var(--verde-energetico));
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .planos-comparativo {
+        padding: 1.25rem;
+        margin: 2.5rem 0;
+    }
+    
+    .tabela-planos th,
+    .tabela-planos td {
+        padding: 0.75rem 0.5rem;
+    }
+    
+    .tabela-planos th:first-child,
+    .tabela-planos td:first-child {
+        padding-left: 1rem;
+    }
+}
+
+/* ======================
+   OFERTA ESPECIAL - DESIGN MODERNO
+   ====================== */
+   .oferta-especial {
+    --gradient-angle: 135deg;
+    --highlight-opacity: 0.1;
+    --shadow-intensity: 0.3;
+    --transition-speed: 0.4s;
+    
+    margin: 3.125rem auto 0;
+    max-width: 1200px;
+    background: linear-gradient(
+        var(--gradient-angle), 
+        var(--azul-tecnico) 0%, 
+        var(--azul-escuro) 100%
+    );
+    color: hsl(0, 0%, 98%);
+    padding: clamp(2rem, 5vw, 3.125rem);
+    border-radius: 12px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    align-items: center;
+    box-shadow: 
+        0 5px 20px rgba(0, 91, 170, var(--shadow-intensity)),
+        0 0 0 1px rgba(255, 255, 255, 0.05) inset;
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+    transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+}
+
+.oferta-especial:hover {
+    transform: translateY(-5px);
+    box-shadow: 
+        0 8px 25px rgba(0, 91, 170, calc(var(--shadow-intensity) + 0.1)),
+        0 0 0 1px rgba(255, 255, 255, 0.1) inset;
+}
+
+/* Efeito de luz dinâmico */
+.oferta-especial::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(
+        circle at 70% 30%, 
+        rgba(255, 255, 255, var(--highlight-opacity)) 0%, 
+        transparent 70%
+    );
+    transform: rotate(30deg);
+    z-index: -1;
+    transition: opacity var(--transition-speed) ease;
+}
+
+.oferta-especial:hover::before {
+    --highlight-opacity: 0.15;
+    animation: lightSweep 8s infinite linear;
+}
+
+/* Conteúdo principal */
+.oferta-content {
+    position: relative;
+    z-index: 2;
+}
+
+.oferta-content h3 {
+    font-size: clamp(1.5rem, 3vw, 1.8rem);
+    margin-bottom: 1rem;
+    line-height: 1.3;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.oferta-content p {
+    font-size: clamp(1rem, 2vw, 1.1rem);
+    opacity: 0.92;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+/* Contador moderno */
+.contador {
+    display: flex;
+    gap: 1.25rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.contador-item {
+    --item-bg: rgba(255, 255, 255, 0.08);
+    
+    text-align: center;
+    background: var(--item-bg);
+    padding: 1rem;
+    border-radius: 8px;
+    min-width: 5rem;
+    flex: 1;
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.contador-item:hover {
+    --item-bg: rgba(255, 255, 255, 0.15);
+    transform: translateY(-3px);
+}
+
+.contador-item span:first-child {
+    display: block;
+    font-size: clamp(1.8rem, 4vw, 2.2rem);
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 0.3rem;
+    background: linear-gradient(to bottom, #fff, #e0f2ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.contador-item span:last-child {
+    font-size: 0.75rem;
+    opacity: 0.85;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 500;
+}
+
+/* CTA Aprimorado */
+.oferta-cta {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.oferta-cta .btn-primary {
+    --btn-bg: var(--verde-energetico);
+    --btn-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--btn-bg);
+    color: white;
+    padding: 0.9375rem 1.875rem;
+    border-radius: 6px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all var(--transition-speed) cubic-bezier(0.34, 1.56, 0.64, 1);
+    font-size: 1.1rem;
+    box-shadow: var(--btn-shadow);
+    position: relative;
+    overflow: hidden;
+    border: none;
+    cursor: pointer;
+    min-width: 200px;
+}
+
+.oferta-cta .btn-primary::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.2) 50%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    transform: translateX(-100%);
+    transition: transform 0.6s ease;
+}
+
+.oferta-cta .btn-primary:hover {
+    --btn-bg: #00b386;
+    --btn-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+    
+    transform: translateY(-3px) scale(1.02);
+}
+
+.oferta-cta .btn-primary:hover::after {
+    transform: translateX(100%);
+}
+
+.oferta-cta .btn-primary i {
+    margin-right: 0.625rem;
+    font-size: 1.2em;
+}
+
+.oferta-cta small {
+    display: block;
+    margin-top: 0.9375rem;
+    font-size: 0.8125rem;
+    opacity: 0.85;
+    font-weight: 400;
+}
+
+/* Efeitos de animação */
+@keyframes lightSweep {
+    0% { transform: rotate(30deg) translateX(-10%); }
+    50% { transform: rotate(30deg) translateX(10%); }
+    100% { transform: rotate(30deg) translateX(-10%); }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .oferta-especial {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .contador {
+        justify-content: center;
+    }
+    
+    .oferta-cta {
+        margin-top: 1rem;
+    }
+}
+
+/* ======================
+   RESPONSIVIDADE 
+   ====================== */
+@media (max-width: 1200px) {
+    .planos-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 992px) {
+    .planos-section {
+        padding: 80px 0;
+    }
+    
+    .planos-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+    
+    .oferta-especial {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+    
+    .contador {
+        justify-content: center;
+    }
+    
+    .oferta-cta {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .section-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .plano-header {
+        padding: 25px;
+    }
+    
+    .plano-beneficios {
+        padding: 25px;
+    }
+    
+    .planos-comparativo {
+        padding: 30px;
+    }
+    
+    .oferta-especial {
+        padding: 40px 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .planos-section {
+        padding: 60px 0;
+    }
+    
+    .plano-card {
+        max-width: 350px;
+        margin: 0 auto;
+    }
+    
+    .plano-badge {
+        right: -30px;
+        padding: 5px 30px;
+    }
+    
+    .planos-comparativo {
+        padding: 20px 15px;
+    }
+    
+    .planos-comparativo th,
+    .planos-comparativo td {
+        padding: 12px 8px;
+    }
+    
+    .contador {
+        gap: 10px;
+    }
+    
+    .contador-item {
+        min-width: 70px;
+        padding: 10px;
+    }
+    
+    .contador-item span:first-child {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .selo-garantia {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+    }
+    
+    .plano-preco .valor {
+        font-size: 2.4rem;
+    }
+    
+    .plano-preco .periodo {
+        font-size: 1rem;
+    }
+}
